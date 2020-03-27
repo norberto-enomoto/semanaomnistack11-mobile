@@ -18,4 +18,4 @@ O APP estará rodando em seu celular, cada alteração que você fizer no códig
 as alterações em tempo real.
 
 
-#### O [backend](semanaomnistack11-backend) deste app que foi escrito em Node está hospedado no [Heroku](heroku.com).
+#### O [backend](semanaomnistack11-backend) deste app que foi escrito em Node e está hospedado no [Heroku](heroku.com).
