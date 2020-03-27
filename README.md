@@ -17,3 +17,5 @@ Abra seu App Expo e escaneie o QR Code gerado e pronto!
 O APP estará rodando em seu celular, cada alteração que você fizer no código as alterações serão replicadas para o seu celular e você poderá ver
 as alterações em tempo real.
 
+
+#### O [backend](semanaomnistack11-backend) deste app que foi escrito em Node está hospedado no [Heroku](heroku.com).
