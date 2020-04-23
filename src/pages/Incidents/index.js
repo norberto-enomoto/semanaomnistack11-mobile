@@ -11,7 +11,8 @@ import styles from './styles';
 export default function Incidents(){
     const [incidents, setIncidents] = useState([]);
     const [total, setTotal] = useState(0);
-    const [page, setPage] = useState(1);
+    const [size, setSize] = useState(5);
+    const [page, setPage] = useState(0);
     const [loading, setLoading] = useState(false);
 
     const navigation = useNavigation();
@@ -33,12 +34,14 @@ export default function Incidents(){
         setLoading(true);
         const response = await api.get('incidents', {
             params: {
+                size,
                 page
             }
         });
 
-        setIncidents([...incidents, ...response.data]);
-        setTotal(response.headers['x-total-count']);
+        setIncidents([...incidents, ...response.data.content]);
+        setTotal(response.data.totalElements);
+        setSize(5);
         setPage(page + 1);
         setLoading(false);
     }
